@@ -1,38 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&display=swap');
+.main {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: lightslategray;
+}
+
 .App {
-  text-align: center;
+    margin: 0;
+    padding: 3% 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.gameBoard {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.square {
+    border: 2px solid black;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.status {
+    margin: 0;
+    padding: 12% 0 0 0;
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
-.App-link {
-  color: #61dafb;
+.reset {
+    margin: 0;
+    padding: 2% 0 0 0;
+    display: flex;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn {
+    border-radius: 35px;
+    background-color: rgb(13, 13, 247);
+    color: whitesmoke;
 }
