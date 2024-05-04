@@ -70,10 +70,6 @@ let status;
 winner ? status = "The Winner Is: " + winner : 
 status = "The Next Player To Choose Is: " + (xIsNext ? "X" : "O") 
 
-if (xIsNext === !'X' || !'O') {
-  status = 'Nobody Won. Reset & Play A New Game.'
-}
-
 
 
 
