@@ -67,11 +67,15 @@ const calculateWinner = (squares) =>{
 
 const winner = calculateWinner(squares);
 let status;
-if (winner) {
-  status = "The Winner Is: " + winner; 
-} else {
-  status = "The Next Player To Choose Is: " + (xIsNext ? "X" : "O");
+winner ? status = "The Winner Is: " + winner : 
+status = "The Next Player To Choose Is: " + (xIsNext ? "X" : "O") 
+
+if (xIsNext === !'X' || !'O') {
+  status = 'Nobody Won. Reset & Play A New Game.'
 }
+
+
+
 
 
   return (
